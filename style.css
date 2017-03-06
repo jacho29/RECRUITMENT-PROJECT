@@ -1,0 +1,275 @@
+/* HELLO B) */
+/*
+@media screen and (max-width:680px) {
+  ul.topnav li:not(:first-child) {display: none;}
+  ul.topnav li.icon {
+    float: right;
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width:680px) {
+  ul.topnav.responsive {position: relative;}
+  ul.topnav.responsive li.icon {
+      
+      position: absolute;
+      float: right;
+      left: 0;
+      top: 115;
+     
+  }
+  ul.topnav.responsive li {
+    float: none;
+    display: inline;
+  }
+  ul.topnav.responsive li a {
+    display: block;
+    text-align: center;
+  }
+}
+*/
+
+
+body{
+    height: 768;
+    width: 1024;
+    font-family: sans-serif;
+    margin: 0 auto;
+background-image: url(data:image/png;base64,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);
+  
+background-color: #6e6e6e;
+
+    color: white;
+}
+
+
+ul.topnav {
+    
+    text-align: left;
+    list-style-type: none;
+    margin: 0;
+    padding: 7 0 0 0 ;
+}
+
+ul.topnav li { float: left; width: 25%;}
+
+ul.topnav li a {
+    
+    color: #f2f2f2;
+    text-decoration: none;
+    text-align: center;
+    padding: 10 0 15 0;
+    width: 100%;
+    transition: 0.5s;
+    font-size: 17px;
+     
+}
+
+ul.topnav li a:hover {color:#1d9ed9; background-color: #000;}
+ 
+ul.topnav li.icon {display: none;}
+
+
+#zleft{
+     
+    width: 60%;
+    height:100%;
+    background-color:white;
+    padding-left: 3%;
+    padding-right: 7%;
+    
+    
+     
+    margin: 0;
+    color: black;  
+    float: left;
+    
+}
+
+#zright{
+    z-index: 100;
+    width: 28%;
+    color: #1d9ed9;
+    float: left;
+    background-color: lightgrey;
+    height:100%;
+    padding-left: 2%;
+     
+   
+}
+#workit{
+    padding-top: 75;
+}
+
+#r-hr{
+      
+    width:50%;
+    height: 2;
+    background: #1d9ed9;
+}
+
+#r-img{
+   padding: 10 10 10 0;
+}
+ 
+
+
+#data{
+    padding: 25;
+    float:right;
+}
+
+#darkenit{
+    z-index: -1;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+      
+    box-shadow: 0px 4px 3px rgba(0,0,0,0.4);
+    left:0;
+    right:0;
+    height: 115;
+}
+
+#big-img{
+    border-radius: 5px;
+    padding: 0 0 0 00;
+    width: 483;
+}
+
+#left-button, #right-button{
+    color:white;
+    font-size: 50;
+    padding: 15 0 0 10;
+    cursor: pointer;
+}
+
+
+
+
+
+.big-image { 
+    
+   position: relative; 
+   width: 100%; /* for IE 6 */
+}
+
+
+.footer{
+    padding-top: 5;
+    padding-bottom: 5;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    color: white;
+    background-color:black;
+    bottom:0;
+    left:0;
+    right:0;
+}
+
+.footer a {
+    
+    color: #f2f2f2;
+    text-decoration: none;
+    text-align: center;
+    padding: 0 10 10 10;
+    width: 100%;
+    
+    font-size: 17px;
+     
+}
+
+.footer a:hover {color:#1d9ed9; }
+
+
+.left{
+float: left; 
+ width: 10%;
+
+}
+
+.internal{
+ display: inline-block;
+}
+
+.internal a {
+    background-color: white;
+opacity: 0.6;
+
+}
+ .internal a:visited{
+    opacity: 1;
+}
+.internal a:hover{
+    opacity: 1;
+}
+
+
+.center{
+    padding-top: 10;
+ float: left; 
+ width: 79%;
+ margin: 1px;
+ overflow: auto;
+ white-space: nowrap;
+ overflow-x:hidden;
+
+}
+
+
+.right{
+ float: left; 
+ width: 10%;
+}
+ 
+.hooover{ 
+     
+   padding: 4 0 0 20;
+   position: absolute; 
+   background-color: rgba(0,0,0,0.9);
+    color: white;
+   top: 228px; 
+   left: 0; 
+   width: 463;
+   height: 40;
+    box-shadow: 2px 5px 8px rgba(0,0,0,0.7);
+    
+} 
+
+
+.logos {
+    
+    padding: 5 0 1 10;
+    color: white;
+   
+    
+  }
+
+.contaner{
+    
+    padding-top: 49;
+    
+     
+}
+
+ 
+.gallery-frame{
+      width: 483;
+     border: 1px solid;
+    border-radius: 5px;
+    box-shadow: 3px 10px 12px rgba(0,0,0,0.7);
+    
+    
+}
+.gallery {
+    height: 82;
+    background: #ffffff; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient(#ffffff, #9d9d9d); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#ffffff, #9d9d9d); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#ffffff, #9d9d9d); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(#ffffff, #9d9d9d); /* Standard syntax */
+     border: 1px solid;
+    border-radius: 5px;
+ 
+}
+
